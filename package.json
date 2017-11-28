@@ -1,0 +1,14 @@
+{
+  "name": "jurassicpark",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "mocha": "^4.0.1"
+  }
+}
