@@ -1,3 +1,5 @@
+var Dinosaur = require("./dinosaur.js");
+
 var JurassicPark = function(){
     this.enclosure = []
 }
@@ -30,16 +32,21 @@ JurassicPark.prototype = {
 
         return newEnclosure;
     },
-    
-//doesnt return dino babies giving birth
-    getEstimatedOffspring(years){
-        var total = 0;
 
-        for(dino of this.enclosure){
-            total += dino.offspringCount * years;
+    getEstimatedOffspring(years){
+        baby = new Dinosaur("baby", dino.type, dino.offspringCount);
+    //provided each dino baby has the same fertility rate?
+        for (dino of this.enclosure){
+            add(baby) * (dino.offspringCount * years);
         }
 
-        return total;
+        //doesnt return dino babies giving birth
+        //var total = 0;
+        //
+        // for(dino of this.enclosure){
+        //     total += dino.offspringCount * years;
+        // }
+        //return total;
     }
 }
 

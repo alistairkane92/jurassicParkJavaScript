@@ -50,7 +50,7 @@ describe("Jurassic Park", function(){
     it("should be able to calculate offspring after two years", function(){
         jurassicPark.add(colin);
 
-        assert.strictEqual(jurassicPark.getEstimatedOffspring(2), 16);
+        assert.strictEqual(jurassicPark.getEstimatedOffspring(2), 74);
     })
 
     it("should be able to calculate offspring after one year with two dinos", function(){
